@@ -635,6 +635,7 @@ function setLatestDataset() {
       return currentDate > array[latestDateIndex] ? currentIndex : latestDateIndex;
     }, 0);
   currentVersion = Object.keys(dataSet)[latestDateIndex];
+  console.log(`Found ${currentVersion} to be newest version.`)
 
   characterData = dataSet[currentVersion].characterData;
   options = dataSet[currentVersion].options;
