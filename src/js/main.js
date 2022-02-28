@@ -741,6 +741,8 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
     } else {
       currentVersion = dateMap[timeError ? afterDateIndex : beforeDateIndex].str;
     }
+	
+	console.log(`Using version ${currentVersion} as found to be newest.`)
 
     options = dataSet[currentVersion].options;
     characterData = dataSet[currentVersion].characterData;
