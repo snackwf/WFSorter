@@ -761,7 +761,7 @@ function decodeQuery(queryString = window.location.search.slice(1)) {
           document.getElementById(`cb-${opt.key}-${subindex}`).checked = subIsTrue;
           document.getElementById(`cb-${opt.key}-${subindex}`).disabled = optIsTrue;
         });
-        suboptDecodedIndex = suboptDecodedIndex + optIsTrue ? 1 : 0;
+        suboptDecodedIndex = suboptDecodedIndex + optIsTrue;
       } else { document.getElementById(`cb-${opt.key}`).checked = optDecoded[index] === '1'; }
     });
 

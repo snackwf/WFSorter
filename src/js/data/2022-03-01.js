@@ -24,7 +24,7 @@ dataSet[dataSetVersion].options = [
     key: "race",
     tooltip: "Check this to restrict to certain races.",
     checked: false,
-    sub: [ { name: "Dragon", key: "Dragon" }, { name: "Human", key: "Human" }, { name: "Sprite", key: "Sprite" }, { name: "Beast", key: "Beast" }, { name: "Youkai", key: "Youkai" }, { name: "Mecha", key: "Mecha" }, { name: "Aquatic", key: "Aquatic" }, { name: "Demon", key: "Demon" }, { name: "Undead", key: "Undead" } ]
+    sub: [ { name: "Dragon", key: "Dragon", checked: true }, { name: "Human", key: "Human", checked: true }, { name: "Sprite", key: "Sprite", checked: true }, { name: "Beast", key: "Beast", checked: true }, { name: "Youkai", key: "Youkai", checked: true }, { name: "Mecha", key: "Mecha", checked: true }, { name: "Aquatic", key: "Aquatic", checked: true }, { name: "Demon", key: "Demon", checked: true }, { name: "Undead", key: "Undead", checked: true } ]
   },
   {
     name: "Filter by Rarity",
@@ -38,7 +38,7 @@ dataSet[dataSetVersion].options = [
     key: "attribute",
     tooltip: "Check this to restrict to certain attributes.",
     checked: false,
-    sub: [ { name: "Fire", key: "Fire" }, { name: "Water", key: "Water" }, { name: "Thunder", key: "Thunder" }, { name: "Wind", key: "Wind" }, { name: "Light", key: "Light" }, { name: "Dark", key: "Dark" } ]
+    sub: [ { name: "Fire", key: "Fire", checked: true }, { name: "Water", key: "Water", checked: true }, { name: "Thunder", key: "Thunder", checked: true }, { name: "Wind", key: "Wind", checked: true }, { name: "Light", key: "Light", checked: true }, { name: "Dark", key: "Dark", checked: true } ]
   },
   {
     name: "Use GL Names when applicable.",
