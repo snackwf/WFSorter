@@ -110,8 +110,11 @@ body {
 }
 
 .sorter > .image {
-  width: 250px;
-  height: 250px;
+  display:block;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
   margin: auto;
   grid-row: 1 / 7;
   cursor: pointer;

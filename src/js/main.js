@@ -795,8 +795,9 @@ function preloadImages() {
   };
 
   return Promise.all(characterDataToSort.map(async (char, idx) => {
-	const imgSel = optTaken[6] ? char.altImg : char.img
-    characterDataToSort[idx].img = await loadImage(`${imageRoot}${imgSel}/1.png`);
+	const imgSel = optTaken[6] ? "full_shot_1.png" : "full_shot_0.png"
+	const imgUrl = `${imageRoot}${char.devName}/${imgSel}`
+    characterDataToSort[idx].img = await loadImage(`https://api.allorigins.win/raw?url=${encodeURIComponent(imgUrl)}`);
   }));
 }
 
